@@ -1,10 +1,10 @@
 import { relations } from "drizzle-orm";
-import { integer, pgTable, text, pgEnum } from "drizzle-orm/pg-core";
+import { pgTable, text, integer, pgEnum } from "drizzle-orm/pg-core";
 import { createdAt, id, updatedAt } from "../schemaHelpers";
 import { CourseProductTable } from "./courseProduct";
 
 export const productStatuses = ["public", "private"] as const;
-export type productStatus = (typeof productStatuses)[number];
+export type ProductStatus = (typeof productStatuses)[number];
 export const productStatusEnum = pgEnum("product_status", productStatuses);
 
 export const ProductTable = pgTable("products", {
