@@ -9,7 +9,7 @@ import { wherePublicCourseSections } from "@/features/courseSections/permissions
 import { and, eq } from "drizzle-orm";
 import { wherePublicLessons } from "./lessons";
 import { cacheTag } from "next/dist/server/use-cache/cache-tag";
-import { getUserCourseAccessUserTag } from "@/features/courses/db/cache/userCourseAccess";
+import { getUserCourseAccessUserTag } from "@/features/courses/db/userCourseAccess";
 import { getLessonIdTag } from "../db/cache/lessons";
 
 export async function canUpdateUserLessonCompleteStatus(

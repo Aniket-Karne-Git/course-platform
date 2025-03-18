@@ -7,7 +7,7 @@ import {
   UserCourseAccessTable,
   UserRole,
 } from "@/drizzle/schema";
-import { getUserCourseAccessUserTag } from "@/features/courses/db/cache/userCourseAccess";
+import { getUserCourseAccessUserTag } from "@/features/courses/db/userCourseAccess";
 import { wherePublicCourseSections } from "@/features/courseSections/permissions/section";
 import { and, eq, or } from "drizzle-orm";
 import { getLessonIdTag } from "../db/cache/lessons";

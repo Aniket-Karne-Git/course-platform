@@ -12,7 +12,7 @@ import {
   UserCourseAccessTable,
 } from "@/drizzle/schema";
 import { asc, countDistinct, eq } from "drizzle-orm";
-import { getUserCourseAccessGlobalTag } from "@/features/courses/db/cache/userCourseAccess";
+import { getUserCourseAccessGlobalTag } from "@/features/courses/db/userCourseAccess";
 import { getCourseSectionGlobalTag } from "@/features/courseSections/db/cache";
 import { getLessonGlobalTag } from "@/features/lessons/db/cache/lessons";
 
